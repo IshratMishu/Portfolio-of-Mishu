@@ -1,9 +1,9 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { MdLocationPin, MdOutlineMarkEmailRead } from "react-icons/md";
-import { useEffect } from "react";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import { Typewriter } from "react-simple-typewriter";
 
 const Contact = () => {
 
@@ -36,15 +36,21 @@ const Contact = () => {
     };
 
     return (
-        <div className="mx-0 md:mx-10">
-            <h2 className="text-center mt-32 text-2xl mb-16">CONTACT ME</h2>
+        <div className="mx-5 mb-24">
+            <h2 className="text-center mt-16 text-4xl md:text-5xl mb-20">Let's 
+            <Typewriter
+                    words={[' Talk!']}
+                    loop={100}
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                />🤝</h2>
             <div className="flex flex-col md:flex-row justify-between">
                 <div className="md:w-1/2 w-auto">
-                    <h4 className="text-2xl mb-2">Drop Me a Message</h4>
                     <p className="text-balance">I would love to hear from you! Whether you have a question, <br /> an opportunity, or just want to say hi, feel free to reach out. <br /> You can contact me via:</p>
-                    <div className="flex items-center gap-2 mt-4"><FaWhatsapp className="border border-secondary shadow-sm shadow-white text-xl" /> +880 1640 724013</div>
-                    <div className="flex items-center gap-2 mt-2"><MdOutlineMarkEmailRead className="border border-secondary shadow-sm shadow-white text-xl" /> ishratjahan0425@gmail.com</div>
-                    <div className="flex items-center gap-2 mt-2"><MdLocationPin className="border border-secondary shadow-sm shadow-white text-xl" /> Jamalpur, Dhaka, Bangladesh</div>
+                    <div className="flex items-center gap-2 mt-4"><FaWhatsapp className="border border-[#ac859e] shadow-sm shadow-[#2e2c39] text-xl rounded-md text-white bg-[#ac859e]" /> +880 1640 724013</div>
+                    <div className="flex items-center gap-2 mt-2"><MdOutlineMarkEmailRead className="border border-[#ac859e] shadow-sm shadow-[#2e2c39] text-xl rounded-md text-white bg-[#ac859e]" /> ishratjahan0425@gmail.com</div>
+                    <div className="flex items-center gap-2 mt-2"><MdLocationPin className="border border-[#ac859e] shadow-sm shadow-[#2e2c39] text-xl rounded-md text-white bg-[#ac859e]" /> Jamalpur, Dhaka, Bangladesh</div>
                     <p className="text-balance text-sm mt-4">📌 I’m always excited to connect with fellow developers, potential employers, and anyone interested in my work. Let’s get in touch and create something amazing together!</p>
                 </div>
                 <div className="md:w-1/2 w-auto mt-10 md:mt-0">
@@ -55,7 +61,7 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     name="user_name"
-                                    className="form-input bg-neutral mt-1 block w-full p-2 rounded"
+                                    className="form-input placeholder-[#d5d4d6] bg-[#ac859e] mt-1 block w-full p-2 rounded"
                                     placeholder="Your Name"
                                     required
                                 />
@@ -67,7 +73,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     name="user_email"
-                                    className="form-input bg-neutral mt-1 block w-full p-2 rounded"
+                                    className="form-input bg-[#ac859e] placeholder-[#d5d4d6] mt-1 block w-full p-2 rounded"
                                     placeholder="Your Email"
                                     required
                                 />
@@ -78,7 +84,7 @@ const Contact = () => {
                                 <span>Message</span>
                                 <textarea
                                     name="message"
-                                    className="form-textarea mt-1 block w-full h-24 p-2 bg-neutral rounded"
+                                    className="form-textarea mt-1 block w-full h-24 p-2 placeholder-[#d5d4d6] bg-[#ac859e] rounded"
                                     placeholder="Your Message"
                                     required
                                 />
@@ -88,7 +94,7 @@ const Contact = () => {
                             <button
                                 type="submit"
                                 value="Send"
-                                className="shadow-md shadow-secondary border-2 border-secondary bg-primary hover:bg-neutral font-bold py-2 px-4 rounded">
+                                className="btn text-white text-xl md:text-2xl shadow-md shadow-[#ac859e] border-2 border-[#ac859e] bg-[#2e2c39] rounded-md hover:bg-[#ac859e] hover:border-[#2e2c39]">
                                 Send Message
                             </button>
                         </div>

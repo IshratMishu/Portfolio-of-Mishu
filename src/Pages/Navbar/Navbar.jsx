@@ -4,15 +4,14 @@ const Navbar = () => {
 
     const linkStyle = ({ isActive }) => {
         return {
-            color: isActive ? "black" : "",
             background: "none",
-            borderBottom: isActive? "2px solid blue" : "",
-            borderRadius: isActive? "0" : ""
+            borderBottom: isActive ? "2px solid #ac859e" : "",
+            borderRadius: isActive ? "0" : ""
         };
     };
 
     return (
-        <div className="navbar mt-5">
+        <div className="navbar pt-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,20 +30,20 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-slate-800">
-                        <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"><NavLink style={linkStyle} to='/'>HOME</NavLink></li>
-                        <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"><NavLink to='/about' style={linkStyle}>ABOUT ME</NavLink></li>
-                        <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"> <NavLink to='/project' style={linkStyle}>PROJECTS</NavLink></li>
-                        <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"><NavLink to='/contact' style={linkStyle}>CONTACT</NavLink></li>
+                        className="menu menu-sm dropdown-content rounded-md z-[1] gap-4 mt-2 w-52 px-5 py-10 shadow bg-[#2e2c39] text-[#ffffff]">
+                        <li className="hover:border-b-2 hover:border-[#ac859e]"><NavLink style={linkStyle} to='/'>HOME</NavLink></li>
+                        <li className="hover:border-b-2 hover:border-[#ac859e]"><NavLink to='/about' style={linkStyle}>ABOUT ME</NavLink></li>
+                        <li className="hover:border-b-2 hover:border-[#ac859e]"> <NavLink to='/project' style={linkStyle}>PROJECTS</NavLink></li>
+                        <li className="hover:border-b-2 hover:border-[#ac859e]"><NavLink to='/contact' style={linkStyle}>CONTACT</NavLink></li>
                     </ul>
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"><NavLink style={linkStyle} to='/'>HOME</NavLink></li>
-                    <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"><NavLink to='/about' style={linkStyle}>ABOUT ME</NavLink></li>
-                    <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"> <NavLink to='/project' style={linkStyle}>PROJECTS</NavLink></li>
-                    <li className="hover:border-l-2 hover:border-r-2 hover:border-primary"><NavLink to='/contact' style={linkStyle}>CONTACT</NavLink></li>
+                    <li className="hover:border-b-2 hover:border-[#ac859e]"><NavLink style={linkStyle} to='/'>HOME</NavLink></li>
+                    <li className="hover:border-b-2 hover:border-[#ac859e]"><NavLink to='/about' style={linkStyle}>ABOUT ME</NavLink></li>
+                    <li className="hover:border-b-2 hover:border-[#ac859e]"><NavLink to='/project' style={linkStyle}>PROJECTS</NavLink></li>
+                    <li className="hover:border-b-2 hover:border-[#ac859e]"><NavLink to='/contact' style={linkStyle}>CONTACT</NavLink></li>
                 </ul>
             </div>
         </div>

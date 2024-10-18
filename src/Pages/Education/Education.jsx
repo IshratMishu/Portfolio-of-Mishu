@@ -3,14 +3,14 @@
 const Education = () => {
     return (
         <div className="mt-40 mb-20">
-            <h1 className="text-center mb-16 md:mb-20 text-4xl md:text-6xl font-bold">Education</h1>
+            <h1 className="text-center mb-16 md:mb-20 text-4xl md:text-5xl font-bold">EDUCATION</h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
                     <div className="timeline-middle">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
-                            fill="currentColor"
+                            fill="#ac859e"
                             className="h-5 w-5">
                             <path
                                 fillRule="evenodd"
@@ -33,7 +33,7 @@ const Education = () => {
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
-                            fill="currentColor"
+                            fill="#ac859e"
                             className="h-5 w-5">
                             <path
                                 fillRule="evenodd"
@@ -56,7 +56,7 @@ const Education = () => {
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
-                            fill="currentColor"
+                            fill="#ac859e"
                             className="h-5 w-5">
                             <path
                                 fillRule="evenodd"
