@@ -14,7 +14,7 @@ const Banner = () => {
      data-aos-duration="3000">
             <p className="text-3xl mb-4">Hey👋</p>
             <p className="text-2xl mb-6">It’s <span className="text-[#ac859e] font-semibold">Ishrat Jahan Mishu</span></p>
-            <h2 className="md:text-6xl text-3xl text-[#ac859e]">a Junior <span className="lg:text-8xl md:text-7xl text-5xl text-[#2e2c39]">Front-End{' '} <br /> Dev
+            <h2 className="md:text-6xl text-2xl text-[#ac859e]">a Junior <span className="lg:text-8xl md:text-7xl text-4xl text-[#2e2c39]">Front-End{' '} <br /> Dev
                 <Typewriter
                     words={['eloper']}
                     loop={10}
