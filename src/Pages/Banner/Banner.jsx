@@ -10,11 +10,11 @@ const Banner = () => {
     }, [])
 
     return (
-        <div className="h-screen mt-16 text-center" data-aos="fade-up"
+        <div className="h-screen md:mt-16 mt-20 text-center space-y-5 mx-5" data-aos="fade-up"
      data-aos-duration="3000">
-            <p className="text-xl mb-3">Hey👋</p>
-            <p className="text-xl mb-6">It’s <span className="text-[#ac859e] font-semibold">Ishrat Jahan Mishu</span></p>
-            <h2 className="md:text-6xl text-2xl text-[#ac859e]">a Junior <span className="lg:text-8xl md:text-7xl text-3xl text-[#2e2c39]">Front-End{' '} <br /> Dev
+            <p className="text-3xl mb-4">Hey👋</p>
+            <p className="text-2xl mb-6">It’s <span className="text-[#ac859e] font-semibold">Ishrat Jahan Mishu</span></p>
+            <h2 className="md:text-6xl text-3xl text-[#ac859e]">a Junior <span className="lg:text-8xl md:text-7xl text-5xl text-[#2e2c39]">Front-End{' '} <br /> Dev
                 <Typewriter
                     words={['eloper']}
                     loop={10}

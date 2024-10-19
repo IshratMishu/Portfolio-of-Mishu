@@ -8,9 +8,9 @@ const Skills = () => {
     }, [])
 
     return (
-        <div className="mt-28 relative" id='skill' data-aos="fade-up"
+        <div className="mt-44 relative" id='skill' data-aos="fade-up"
         data-aos-anchor-placement="center-bottom">
-            <h1 className="text-center mb-0 md:mb-20 text-4xl md:text-5xl font-bold text-[#2e2c39]">SKILLS</h1>
+            <h1 className="text-center mb-0 md:mb-16 text-4xl md:text-5xl font-bold text-[#2e2c39]">SKILLS</h1>
             <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 md:gap-10 gap-2">
                 <div>
                     <p className="md:w-36 w-28 p-2 md:p-4 text-center text-xl md:text-2xl rotate-6 absolute top-44 md:left-auto left-10 shadow-md shadow-[#2e2c39] border-2 border-[#ac859e] bg-[#ac859e] rounded-2xl text-white hover:bg-[#2e2c39] hover:border-[#ac859e]">JavaScript</p>

@@ -1,3 +1,6 @@
+body {
+    background-image: linear-gradient(25deg,#ffffff,#FFB6C1,#ffffff, #ffffff);
+  }
 
 @tailwind base;
 @tailwind components;
