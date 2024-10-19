@@ -1,8 +1,17 @@
 import photo from '../../assets/photo.png'
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Biography = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div className="flex md:flex-row flex-col items-center gap-20 md:gap-28 mt-16 md:mt-28 lg:mt-16">
+        <div className="flex md:flex-row flex-col items-center gap-20 md:gap-28 mt-16 md:mt-28 lg:mt-16" id='bio' data-aos="fade-up"
+        data-aos-duration="3000">
             <div className='md:w-1/3 w-auto'>
                 <img className='shadow-lg rounded-md shadow-[#2e2c39]' src={photo} alt="" />
             </div>

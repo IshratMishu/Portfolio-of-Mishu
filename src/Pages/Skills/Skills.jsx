@@ -1,7 +1,15 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skills = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div className="mt-28 relative">
+        <div className="mt-28 relative" id='skill' data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <h1 className="text-center mb-0 md:mb-20 text-4xl md:text-5xl font-bold text-[#2e2c39]">SKILLS</h1>
             <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 md:gap-10 gap-2">
                 <div>

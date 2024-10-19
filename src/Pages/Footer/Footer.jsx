@@ -10,9 +10,6 @@ const Footer = () => {
                 <nav>
                     <div className="flex gap-10 justify-center text-4xl items-center">
                         <FaArrowRightLong className="text-6xl text-[#ac859e] animate__animated animate__headShake animate__infinite hidden md:block" />
-                        <a href="https://www.facebook.com/ishratjahan.mishu.33" target="_blank">
-                            <FaFacebook className="hover:bg-[#ac859e] hover:rounded-full" />
-                        </a>
                         <a href="www.linkedin.com/in/ishratmishu" target="_blank">
                             <FaLinkedin className="hover:bg-[#ac859e] hover:rounded-full" />
                         </a>
@@ -21,6 +18,9 @@ const Footer = () => {
                         </a>
                         <a href="https://www.instagram.com/ishrat._.mishu" target="_blank">
                             <FaSquareInstagram className="hover:bg-[#ac859e] hover:rounded-full" />
+                        </a>
+                        <a href="https://www.facebook.com/ishratjahan.mishu.33" target="_blank">
+                            <FaFacebook className="hover:bg-[#ac859e] hover:rounded-full" />
                         </a>
                     </div>
                 </nav>

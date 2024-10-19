@@ -1,12 +1,19 @@
 import { FaDownload } from "react-icons/fa";
-import 'animate.css';
 import { Typewriter } from 'react-simple-typewriter'
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div className="h-screen mt-10 text-center">
+        <div className="h-screen mt-16 text-center" data-aos="fade-up"
+     data-aos-duration="3000">
             <p className="text-xl mb-3">Hey👋</p>
-            <p className="text-xl mb-6 animate__animated animate__bounceInLeft">It’s <span className="text-[#ac859e] font-semibold">Ishrat Jahan Mishu</span></p>
+            <p className="text-xl mb-6">It’s <span className="text-[#ac859e] font-semibold">Ishrat Jahan Mishu</span></p>
             <h2 className="md:text-6xl text-2xl text-[#ac859e]">a Junior <span className="lg:text-8xl md:text-7xl text-3xl text-[#2e2c39]">Front-End{' '} <br /> Dev
                 <Typewriter
                     words={['eloper']}

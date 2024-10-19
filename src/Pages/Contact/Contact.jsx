@@ -4,8 +4,15 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import { Typewriter } from "react-simple-typewriter";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     const form = useRef();
 
@@ -19,13 +26,13 @@ const Contact = () => {
             .then(
                 () => {
                     Swal.fire({
-                        color: 'oklch(var(--nc))',
+                        color: '#ffffff',
                         title: 'Success!',
                         text: 'Your message has been sent successfully.',
                         icon: 'success',
-                        background: 'oklch(var(--n))',
+                        background: '#ac859e',
                         confirmButtonText: 'OK',
-                        confirmButtonColor: 'oklch(var(--p))'
+                        confirmButtonColor: '#2e2c39'
                     });
                     form.current.reset();
                 },
@@ -36,7 +43,8 @@ const Contact = () => {
     };
 
     return (
-        <div className="mx-5 mb-24">
+        <div className="mx-5 mb-24" data-aos="fade-up"
+        data-aos-duration="3000">
             <h2 className="text-center mt-16 text-4xl md:text-5xl mb-20">Let's 
             <Typewriter
                     words={[' Talk!']}

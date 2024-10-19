@@ -1,8 +1,17 @@
-
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Education = () => {
+    
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
+
     return (
-        <div className="mt-40 mb-20">
+        <div className="mt-40 mb-32" id='edu' data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <h1 className="text-center mb-16 md:mb-20 text-4xl md:text-5xl font-bold">EDUCATION</h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
